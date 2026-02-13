@@ -1,0 +1,4 @@
+So the ints were: 
+0 : 45 
+1 : 48 
+2 : 23 
