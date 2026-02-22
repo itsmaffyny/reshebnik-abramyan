@@ -23,10 +23,7 @@ printf("Gimme an array limit: ");
 scanf("%d", &x);
 
 
-for (int i=0; i<x; i++){
-    printf("Gimme a %d. number: ", i+1);
-    scanf("%d", &stored_array[i]);
-}
+
 printf("--------------\n");
 for (int i = 0; i < x; i++) {
     printf("A %d. number: %d\n",i+1, *(ptr + i));
