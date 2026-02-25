@@ -18,17 +18,17 @@ int x;
 printf("Gimme an array limit: ");
 scanf("%d", &x);
 int stored_array[16];
-int *p = &stored_array[16];
-
 
 printf("--------------\n");
 for (int i = 0; i < x; i++) {
     printf("A %d. number: ",i+1);
     scanf("%d",  &stored_array[i]);
 }
+int *p = &stored_array[16];
 printf("--------------\n");
 for (int i = 0; i < x; i++){
-    printf("A %d. number: %d\n", i+1, p[i]);
+    int b=0;;
+    printf("A %d. number: %d\n", i+1, p[b+i]);
 }
 
 return 0; 
