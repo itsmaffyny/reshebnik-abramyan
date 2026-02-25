@@ -24,11 +24,16 @@ for (int i = 0; i < x; i++) {
     printf("A %d. number: ",i+1);
     scanf("%d",  &stored_array[i]);
 }
-int *p = &stored_array[16];
+
+// for (int i = 0; i < x; i++){
+//     printf("A %d. number: %d\n", i+1, stored_array[i]);
+// }
+
+
+int *p = &stored_array;
 printf("--------------\n");
-for (int i = 0; i < x; i++){
-    int b=0;;
-    printf("A %d. number: %d\n", i+1, p[b+i]);
+for (int i =0; i < x; i++ ){
+    printf("A %d. number: %d\n", i+1, p[i]);
 }
 
 return 0; 
