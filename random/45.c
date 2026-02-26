@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-
 //DOUBLE 
 //SUM SUM POINT
+
 void double_sum(int *storred_array, int size){
     for (int i =0; i < size; i++ ){
         storred_array[i] = 2*storred_array[i];
@@ -28,13 +28,15 @@ while(i != -1){
     stored_array[i]=input;
     i++;
 }
-int size= sizeof(stored_array)/stored_array[0];
-double_sum(stored_array, size);
-sum(stored_array, size);
-printf("--------------\n");
-for (i =0; i < size; i++ ){
-    printf("A %d. number: %d\n", i+1, stored_array[i]);
-}
+int size= sizeof(stored_array)/sizeof(stored_array[0]);
+printf("%d", (size));
+
+// double_sum(stored_array, size);
+// sum(stored_array, size);
+// printf("--------------\n");
+// for (i =0; i < size; i++ ){
+//     printf("A %d. number: %d\n", i+1, stored_array[i]);
+// }
 
 return 0; 
 }
