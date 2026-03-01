@@ -18,8 +18,8 @@ void double_sum(int *storred_array, int size){
 int main(void){ 
 
 int k=0; int input = 0;
-int stored_array[32];
-
+int stored_array[32]={0};
+// int k;
 while(k != -1 || k<32){
     printf("A %d. number: ",k+1);
     scanf("%d", &input );
