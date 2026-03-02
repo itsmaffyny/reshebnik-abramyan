@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 // Write a program in C to store n elements in an array and print the elements using a pointer.
-// Test Data :
-// Input the number of elements to store in the array :5
+// Test Data : Input the number of elements to store in the array :5
 // Input 5 number of elements in the array :
 // Expected Output :
 //  The elements you entered are :                                                                               
@@ -25,12 +24,7 @@ for (int i = 0; i < x; i++) {
     scanf("%d",  &stored_array[i]);
 }
 
-// for (int i = 0; i < x; i++){
-//     printf("A %d. number: %d\n", i+1, stored_array[i]);
-// }
-
-
-int *p = &stored_array;
+int *p = stored_array;
 printf("--------------\n");
 for (int i =0; i < x; i++ ){
     printf("A %d. number: %d\n", i+1, p[i]);
