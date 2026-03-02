@@ -8,7 +8,7 @@
 // Inside add, return x + y
 // The result should be 8.
 
-int add(int x, int y);
+inline int add(int x, int y);
 
 int main ()
 {
@@ -16,6 +16,6 @@ int result= add(5,3);
 printf("Result: %d", result);
 return 0;
 }
-int add(int x, int y){
+inline int add(int x, int y){
 return x+y; 
 }
