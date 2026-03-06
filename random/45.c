@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 //DOUBLES THE GIVEN NUMBERS
 //GIVES YOU A SUM
@@ -17,14 +18,14 @@ int sum(int *storred_array,  int r){
 
 int main(void){ 
 int k=0; int input = 0;
-int stored_array[32]={0};
-
+int stored_array[32];
+memset (stored_array, 0, sizeof(int)*32);
+printf("Give me numbers for an array(max 32), (exit: -1)\n");
 while(k != -1 || k<32){
     printf("A %d. number: ",k+1);
     scanf("%d", &input );
         if (input == -1){
-            break;
-        }
+            exit(1);}
     stored_array[k]=input;
     k++;
 }
