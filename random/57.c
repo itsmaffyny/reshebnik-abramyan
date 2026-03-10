@@ -11,7 +11,7 @@ memcpy(pnt_temp,(double[]){0, 5, 7, 3, 1}, 5 * sizeof(double));
 
 double *check =calloc(20,sizeof(double));
 if (check != NULL){
-    memcpy(check,  pnt_temp, 20* sizeof(double));
+    memcpy(check,  pnt_temp, 5* sizeof(double));
     memset(pnt_temp, 0, 5* sizeof(double));
     free(pnt_temp);
 }
@@ -19,6 +19,6 @@ pnt_temp=check;
 for(int i=0; i<20; i++){
     printf("%lf \n",pnt_temp[i]);
 }
-
+free(pnt_temp);
 return 0;
 }
