@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 int main (void){
-int *pnt;
+// #if 0 
+int *pnt; // whaaaaaat??/
 int *pnt2;
 int *other_pnt;
 strcpy(pnt, "abc12");
@@ -30,8 +31,9 @@ printf("%p\n",other_pnt);
 printf("%d\n",(int)pnt);
 printf("%d\n",(int)other_pnt);
 free(pnt);
+// #endif /*0*/ 
 // printf("%",);
 // printf("%",);
-
+/*bruuu */
 return 0;
 }
