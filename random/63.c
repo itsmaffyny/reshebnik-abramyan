@@ -1,10 +1,13 @@
 #include <stdio.h> 
+   typedef union abs{
+    char b;
+    int k;
+   }REAL;
 int main()
 {
-    int i=0,j=1,k;
-     k=(++i,++j);
-    printf("%d%d%d ",i,j,k);
-    k=(i++,j++);
-    printf("%d%d%d",i,j,k);
-    return 0;
+REAL DEAL={0};
+DEAL.b ='E';
+REAL *REAKK=&DEAL;
+ printf("%d",REAKK->k);
+return 0;
 }
